@@ -1,7 +1,22 @@
+import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { routes } from '@/routes'
+
 const Header = () => {
+  useEffect(() => {
+    console.log(123)
+  }, [])
   return (
     <header>
-      <div className="header-wrap">This is Header</div>
+      <div className="header-wrap">
+        <ul className="nav">
+          {routes.map((r) => (
+            <li className="nav-item">
+              <Link to={r.path}>{r.title}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </header>
   )
 }

@@ -1,12 +1,19 @@
 import Header from './Layout/Header'
-import Main from './Layout/Main'
 import Footer from './Layout/Footer'
+import { Routes, Route } from 'react-router'
+import { routes } from './routes'
 
 const App = () => {
   return (
     <>
       <Header />
-      <Main />
+      <main>
+        <Routes>
+          {routes.map((r) => (
+            <Route key={r.id} path={r.path} element={r.element} />
+          ))}
+        </Routes>
+      </main>
       <Footer />
     </>
   )
