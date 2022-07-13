@@ -1,13 +1,9 @@
-
-
 const Footer = () => {
-    
-
-    return (
+  return (
     <footer>
-        This is Footer
+      <div className="footer-wrap">This is Footer</div>
     </footer>
-    )
+  )
 }
 
 export default Footer

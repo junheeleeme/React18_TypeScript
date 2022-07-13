@@ -1,14 +1,9 @@
-
-
 const Header = () => {
-    
-    console.log(123);
-
-    return (
+  return (
     <header>
-        This is Header
+      <div className="header-wrap">This is Header</div>
     </header>
-    )
+  )
 }
 
 export default Header
