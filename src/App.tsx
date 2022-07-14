@@ -9,7 +9,7 @@ const App = () => {
       <Header />
       <main>
         <Routes>
-          {routes.map((r) => (
+          {routes.map((r, idx) => (
             <Route key={r.id} path={r.path} element={r.element} />
           ))}
         </Routes>

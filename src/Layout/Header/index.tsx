@@ -11,7 +11,7 @@ const Header = () => {
       <div className="header-wrap">
         <ul className="nav">
           {routes.map((r) => (
-            <li className="nav-item">
+            <li key={r.id} className="nav-item">
               <Link to={r.path}>{r.title}</Link>
             </li>
           ))}
