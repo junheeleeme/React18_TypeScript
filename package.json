@@ -1,5 +1,5 @@
 {
-  "name": "react18_custom_webpack",
+  "name": "odj",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,17 +8,9 @@
     "dev": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack serve --env development",
     "build": "cross-env TS_NODE_PROJECT=\"tsconfig-for-webpack-config.json\" webpack"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/junheeleeme/react18_custom_webpack.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/junheeleeme/react18_custom_webpack/issues"
-  },
-  "homepage": "https://github.com/junheeleeme/react18_custom_webpack#readme",
   "dependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
     "cross-env": "^7.0.3",

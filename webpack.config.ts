@@ -76,7 +76,7 @@ const config: Webpack.Configuration = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js',
-    // publicPath: '/dist/'
+    publicPath: '/',
   },
   devServer: {
     historyApiFallback: true,
